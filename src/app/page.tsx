@@ -66,7 +66,6 @@ const ProcessVenueAI = () => {
     requestAnimationFrame(raf);
   }, []);
 
-  // Load theme from localStorage
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme") as
       | "light"
@@ -80,7 +79,6 @@ const ProcessVenueAI = () => {
     }
   }, []);
 
-  // Apply theme on change
   const handleThemeChange = (newTheme: "light" | "dark") => {
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
@@ -99,10 +97,6 @@ const ProcessVenueAI = () => {
           <div className="flex flex-1 flex-col overflow-x-hidden overflow-y-auto">
             {open ? <Logo /> : <LogoIcon />}
 
-            {/* Previous Chats Section */}
-           
-
-            {/* Nav Items */}
             <div className="mt-10 flex flex-col gap-2">
               {links.map((link, idx) => (
                 <SidebarLink
@@ -145,7 +139,6 @@ const ProcessVenueAI = () => {
         </SidebarBody>
       </Sidebar>
 
-      {/* Settings Popup */}
       {isPopupOpen && (
         <div className="fixed inset-0 z-[99999] flex items-center justify-center p-4">
           <div
@@ -165,7 +158,6 @@ const ProcessVenueAI = () => {
               </button>
             </div>
 
-            {/* Theme Selector */}
             <div className="flex flex-col gap-4">
               <h3 className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
                 Theme Preference
@@ -203,6 +195,5 @@ const ProcessVenueAI = () => {
     </div>
   );
 };
-
 
 export default ProcessVenueAI;

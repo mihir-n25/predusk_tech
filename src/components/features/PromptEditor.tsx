@@ -100,7 +100,6 @@ export default function PromptEditor() {
 
   const handleModelSelect = (modelId: string) => {
     setLoading(true);
-    // Simulate API call
     setTimeout(() => {
       setSelectedModel(modelId);
       setLoading(false);
@@ -348,10 +347,8 @@ export default function PromptEditor() {
         </button>
       </header>
 
-      {/* Chat Area */}
       <div className="flex-1 flex flex-col">
         {messages.length === 0 ? (
-          // Welcome Screen
           <div className="flex-1 flex items-center justify-center px-4">
             <div className="text-center max-w-md">
               <Sparkles className="w-12 h-12 text-blue-400 mx-auto mb-4" />
@@ -364,7 +361,6 @@ export default function PromptEditor() {
             </div>
           </div>
         ) : (
-          // Messages
           <div className="flex-1 overflow-y-auto px-4 py-6">
             <div className="max-w-3xl mx-auto space-y-6">
               {messages.map((message) => (

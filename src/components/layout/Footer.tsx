@@ -39,7 +39,6 @@ const Footer = () => {
             <p>A GameFi Infrastructure</p>
             <div className="social-links">
               <a
-                // href="https://www.linkedin.com/company/lync-world/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-links"
@@ -50,7 +49,6 @@ const Footer = () => {
                 />
               </a>
               <a
-                // href="https://warpcast.com/~/channel/lync"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-links farcatser"
@@ -61,7 +59,6 @@ const Footer = () => {
                 />
               </a>
               <a
-                // href="https://twitter.com/Lyncworld"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-links"
@@ -196,12 +193,10 @@ const Footer = () => {
                 id="emai"
                 className="email-form-input"
                 placeholder="enter your email address"
-                fdprocessedid="2qbv0o"
               />
               <button
                 type="submit"
                 className="email-form-submit-btn"
-                fdprocessedid="vzavwh"
               >
                 Submit
               </button>
