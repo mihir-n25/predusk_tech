@@ -329,7 +329,6 @@ export default function PromptEditor() {
           </div>
         </div>
       )}
-      {/* Header */}
       <header className="border-b border-neutral-800 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Sparkles className="w-5 h-5 text-blue-400" />
@@ -383,7 +382,6 @@ export default function PromptEditor() {
                     </div>
                   </div>
 
-                  {/* Actions for assistant messages */}
                   {!message.isUser && (
                     <div className="mt-2 flex items-center gap-3 text-xs text-gray-400">
                       <button
@@ -436,7 +434,6 @@ export default function PromptEditor() {
           </div>
         )}
 
-        {/* Input Area */}
         <div className="border-t border-neutral-800 px-4 py-4">
           <div className="max-w-3xl mx-auto">
             <form onSubmit={handleSubmit} className="relative">
@@ -456,7 +453,6 @@ export default function PromptEditor() {
     disabled={isTyping}
   />
 
-  {/* Selected Model Display */}
   <div className="flex my-auto justify-center items-center gap-2 mr-2 text-center">
     <span className="text-sm text-gray-400">Model:</span>
     <button onClick={() => setIsPopupOpen(true)} className="text-sm font-medium text-blue-400 cursor-pointer">
@@ -478,8 +474,6 @@ export default function PromptEditor() {
 </div>
 
             </form>
-
-            {/* Quick snippets */}
             <div className="flex gap-2 mt-3 overflow-x-auto scrollbar-hide">
               {QUICK_SNIPPETS.map((snippet) => (
                 <button

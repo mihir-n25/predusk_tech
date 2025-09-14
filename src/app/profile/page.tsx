@@ -47,7 +47,6 @@ const ProfileScreen: React.FC = () => {
     <div className={`min-h-screen transition-colors duration-300 ${themeClasses.bg}`}>
    
       <div className="max-w-6xl mx-auto px-6 py-8 my-40">
-        {/* Status Card */}
         <div className={`${themeClasses.cardBg} ${themeClasses.border} border rounded-xl p-6 mb-8`}>
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
@@ -70,7 +69,6 @@ const ProfileScreen: React.FC = () => {
           </div>
         </div>
 
-        {/* Capabilities Section */}
         <div className={`${themeClasses.cardBg} ${themeClasses.border} border rounded-xl p-6 mb-8`}>
           <h2 className={`text-lg font-semibold ${themeClasses.text} mb-4 flex items-center`}>
             <Zap className="w-5 h-5 mr-2" />
@@ -91,7 +89,6 @@ const ProfileScreen: React.FC = () => {
           </div>
         </div>
 
-        {/* Model Information */}
         <div className={`${themeClasses.cardBg} ${themeClasses.border} border rounded-xl p-6 mb-8`}>
           <h2 className={`text-lg font-semibold ${themeClasses.text} mb-4`}>Model Information</h2>
           <div className="space-y-4">
@@ -114,7 +111,6 @@ const ProfileScreen: React.FC = () => {
           </div>
         </div>
 
-        {/* Settings & Actions */}
         <div className={`${themeClasses.cardBg} ${themeClasses.border} border rounded-xl p-6`}>
           <h2 className={`text-lg font-semibold ${themeClasses.text} mb-4`}>Settings & Support</h2>
           <div className="space-y-2">
@@ -135,8 +131,6 @@ const ProfileScreen: React.FC = () => {
             ))}
           </div>
         </div>
-
-        {/* Footer */}
         <div className="text-center mt-8">
           <p className={`text-sm ${themeClasses.textMuted}`}>
             Built with care by Mihir • Version 2.1.0

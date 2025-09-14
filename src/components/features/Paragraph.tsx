@@ -32,11 +32,9 @@ export default function Paragraph({ builtFor, heading, paragraph }: ParagraphPro
         ref={ref}
         className="flex flex-col items-center justify-center gap-6 py-20 text-white"
       >
-        {/* Heading 1 */}
         <div className="flex items-center gap-4 text-4xl md:text-6xl font-bold uppercase">
           <span className="italic">Built for</span>
 
-          {/* Reveal Animation */}
           <div className="relative overflow-hidden">
             <motion.div
               style={{ width }}
@@ -46,8 +44,7 @@ export default function Paragraph({ builtFor, heading, paragraph }: ParagraphPro
           </div>
         </div>
 
-        {/* Heading 2 with Rotating Icon */}
-        <div className="flex items-center gap-3 text-4xl md:text-6xl font-extrabold uppercase">
+          <div className="flex items-center gap-3 text-4xl md:text-6xl font-extrabold uppercase">
           <motion.div
             animate={{ rotate: [0, 20, -20, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}

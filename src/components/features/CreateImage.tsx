@@ -116,7 +116,6 @@ const CreateImageSection = (props: Props) => {
 
       <div className="mt-32 overflow-hidden w-[100%] md:w-[90%] xl:w-[80%] 2xl:w-[75%] m-auto">
         <div className="w-full bg-contain bg-[url(https://i.pinimg.com/564x/a3/88/d3/a388d3f72859a0357a3468150c885eae.jpg)] relative grid md:grid-cols-2 md:py-20">
-          {/* Left Content */}
           <div className="col-span-1 w-full flex justify-center items-center flex-col px-4 gap-y-6">
             <h5
               className={`text-4xl md:text-5xl font-[700] font-Inter text-white text-center mb-3 leading-[55px]`}
@@ -140,7 +139,6 @@ const CreateImageSection = (props: Props) => {
         </Link>
           </div>
 
-          {/* Right Image */}
           <div className="col-span-1 my-6 md:mt-0 flex justify-center">
             <Image
               src="https://i.pinimg.com/564x/84/be/5b/84be5b5d6c60d2446b8fa26240956b2e.jpg"
