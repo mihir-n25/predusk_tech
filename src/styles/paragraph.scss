@@ -1,0 +1,36 @@
+.paragraphAnim {
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
+    line-height: 1;
+    padding: 20px;
+    max-width: 960px;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+  
+    .word {
+      position: relative;
+      margin-right: 12px;
+      margin-top: 12px;
+  
+      .shadow {
+        position: absolute;
+        opacity: 20%;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .paragraph {
+      font-size: 28px; 
+      padding: 24px;  
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .paragraph {
+      font-size: 22px;
+      padding: 16px;
+    }
+  }

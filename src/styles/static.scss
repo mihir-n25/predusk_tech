@@ -1,0 +1,23 @@
+@font-face {
+    font-family: satoshi;
+    src: url(/fonts/Satoshi-Regular.otf);
+}
+@font-face {
+    font-family: satoshibold;
+    src: url(/fonts/Satoshi-Bold.otf);
+}
+@font-face {
+    font-family: satoshiblack;
+    src: url(/fonts/Satoshi-Black.otf);
+}
+
+$font1: satoshi, sans-serif;
+$font-bold: satoshibold, sans-serif;
+$font-black: satoshiblack, sans-serif;
+
+
+$bg:  #020617;
+$bg2: #0e143a;
+$masta: #14befc;
+$white: #FFFFFF;
+$black: #0E0D0D;

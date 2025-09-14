@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
+body {
+    @apply bg-[#020617];
+}
+button {
+    @apply cursor-pointer;
+}

@@ -1,69 +1,75 @@
-# 🚀 Frontend Developer Assignment - Mihir Nebani - Deadline 23 August 2025
+# AI Interface Prototype
 
-This project is a **pixel-perfect homepage clone** built as part of the Z1 Tech Frontend Developer assignment.  
-I chose **PostLabs** and focused on delivering high-quality UI, animations, and responsiveness.  
-
----
-
-## 🔧 Tech Stack
-- **Next.js** – For optimized, scalable React framework with SSR support  
-- **TailwindCSS** – For utility-first, responsive styling  
-- **Framer Motion** – For smooth, performant animations and transitions  
-- **Lenis** – For smooth scrolling experience  
+A polished, frontend-only prototype of an AI interface built with **Next.js**, **TypeScript strict mode**, and **Tailwind CSS**.  
+Deployed on **[Vercel](https://z1-tech-zeta.vercel.app/)**.
 
 ---
 
-## 🛠️ Animation Approach
-To achieve precise animations, I followed a **step-by-step breakdown**:
-1. Built the **outer container components** first.  
-2. Gradually refined into **smaller components with exact animations**.  
-3. Used **experience from practice sessions** to replicate some animations.   
+## 🚀 Live Demo & Repo
+- **Live URL:** [https://z1-tech-zeta.vercel.app/](https://z1-tech-zeta.vercel.app/)  
+- **GitHub Repo:** [https://github.com/mihir-n25/z1_tech](https://github.com/mihir-n25/z1_tech)  
 
 ---
 
-## 🧩 Challenges & Solutions
-- **Exact Typography & Pixel-Perfect Match** → Solved by using browser DevTools and font inspection tools to extract correct font weights, spacing, and sizes.  
-- **Animations & Timing** → Some animations were tricky; breaking them into smaller components made it easier to replicate.  
-- **Responsiveness** → Used a mobile-first approach with Tailwind’s breakpoint utilities to ensure layouts adapted correctly.  
-- **Time Constraint (48 hrs)** → Balanced between visual accuracy and performance while prioritizing key features.  
+## 📖 Research
+
+I reviewed several leading AI platforms and noted their standout features:
+
+1. **ChatGPT & ClaudeAI**  
+   Clean interface , minimalistic design, easy model selection.
+
+2. **Hugging Face Spaces**  
+   Community-driven demos with their product suite.
+
+3. **Google Gemini Image Generation**  
+   Offers seamless multimodal support with high-quality text-to-image generation directly in the interface.
+
+### ✨ Chosen Features to Combine
+From these platforms, I selected **6 core features** to implement in my design:
+1. **Model Selector** – choose between models.  
+2. **Prompt Editor** – save/load prompts from mock data.  
+3. **Parameters Panel** – sliders/inputs for previous chats , dashboard , image creation etc.  
+4. **Chat/Output Area** – user/AI conversation, with copy & download JSON actions.  
+5. **Responsive Layout** – works across mobile, tablet, and desktop.
+6. **Animations:** Framer Motion transitions + Lenis smooth scroll.  
+
+### Storybook
+I set up Storybook and added basic stories for a few components:  
+- **Button**  
+- **Slider**  
+- **Modal**  
+- **ChatBubble**  
+
+👉 Note: *This "Stories" section was new to me, so I didn’t go very deep into it, but I included initial setups and examples.*
 
 ---
 
-## ⏱️ Time Breakdown
-- **Day 1**:  
-  - Built full structure and layout (~50% similarity achieved).  
-  - Focused on flow and sectioning without pixel perfection.  
-- **Day 2**:  
-  - Optimized every component.  
-  - Improved **animations, responsiveness, and cross-browser compatibility**.  
-  - Added enhancements (footer, chatbot, smooth scroll).  
+## 📱 Extra Notes
+- Responsiveness tested across multiple breakpoints.  
+- Added **Framer Motion animations** and **Lenis smooth scroll** for polish.  
+- Added **floating navbar** for easy navigation.
+- Added **chatbot** so you get to know more about me.
+
+### If I Had More Time
+- Improve **mobile-first design** polish.  
+- Refine **typography hierarchy** for better readability.  
+- Add **dynamic chat functionality** with mock-apis.
+- Integrate **dual theme**.  
 
 ---
 
-## 🚀 If I Had One More Day
-- Optimize all **images with compression** for faster load times.  
-- Improve **text animations** across sections for more fluidity.  
-- Polish font alignment and achieve **closer to 100% accuracy**.  
-- Add micro-interactions for enhanced UX.  
+## ⚡ Tech Stack
+- **Next.js (TypeScript, strict mode)**  
+- **React (Functional Components)**  
+- **Tailwind CSS**  
+- **Framer Motion**  
+- **Lenis (smooth scroll)**  
+- **Storybook**  
 
 ---
 
-## 📂 Additional Enhancements
-- **Sticky Footer** → For better contrast and consistent visibility.  
-- **Chatbot Integration** → Showcasing ability to extend features.  
-
+## 📌 Known Limitations
+- Mobile layout can be improved further.  
+- Story Book is not fully configured yet.  
+- Dual theme is not implemented.
 ---
-
-## 🖥️ Setup & Run Locally
-```bash
-# Clone this repository
-git clone https://github.com/mihir-n25/z1_tech.git
-
-# Navigate into project
-cd z1_tech
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev

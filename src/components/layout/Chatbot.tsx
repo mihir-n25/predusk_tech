@@ -25,11 +25,6 @@ const questionCategories = [
         answer:
           "It delivers smooth, controlled transitions without wrestling CSS keyframes. Scroll-linked motion integrates cleanly with components.",
       },
-      {
-        question: "Why PostLabs? Why not Inertia Studios?",
-        answer:
-          "Time limits—I’d practiced Next.js and animations earlier, so some effects came faster. Think of it as recycling code: eco-friendly and deadline-friendly 😄.",
-      },
     ],
   },
   {
@@ -79,12 +74,12 @@ const questionCategories = [
       {
         question: "What about the user experience design?",
         answer:
-          "UX was the top priority. I added a chatbot for quick answers, intuitive navigation, and avoided scrolling effects that hurt usability.",
+          "UX was the top priority. I make sure the design remains consistent, intuitive navigation, and avoided scrolling effects that hurt usability.",
       },
       {
         question: "What according to you lacked behind?",
         answer:
-          "Responsiveness and font precision. With more time, I’d refine these to bring it closer to perfect.",
+          "Responsiveness , Storybook , dual theme and a bit of chat functionality like mock-apis and all. With more time, I’d refine these to bring it closer to perfect.",
       },
     ],
   },

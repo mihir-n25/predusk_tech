@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from 'next/font/google';
 import "./globals.css";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import PostLabsFooter from "@/components/layout/Footer";
+import { FloatingNav } from "@/components/ui/floating-navbar";
 import ChatBot from "@/components/layout/Chatbot";
 
 const interTight = Inter_Tight({
@@ -12,13 +11,13 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.postlabs.in"),
-  title: "PostLabs | Mihir Nebani - Frontend Developer & Full-Stack Engineer",
+  metadataBase: new URL("https://www.Mirofy.in"),
+  title: "Mirofy | Mihir Nebani - Frontend Developer & Full-Stack Engineer",
   description:
-    "Portfolio of Mihir Nebani at PostLabs. Skilled in Next.js, React, TypeScript, Node.js, and building scalable full-stack applications. Explore projects in SaaS, APIs, automation, and real-time apps.",
+    "Portfolio of Mihir Nebani at Mirofy. Skilled in Next.js, React, TypeScript, Node.js, and building scalable full-stack applications. Explore projects in SaaS, APIs, automation, and real-time apps.",
   keywords: [
     "Mihir Nebani",
-    "PostLabs",
+    "Mirofy",
     "Frontend Developer",
     "Full-Stack Engineer",
     "Next.js Developer",
@@ -26,12 +25,12 @@ export const metadata: Metadata = {
     "TypeScript Engineer",
     "Node.js Developer",
     "MERN Developer",
-    "Portfolio PostLabs",
-    "PostLabs Developer Projects",
+    "Portfolio Mirofy",
+    "Mirofy Developer Projects",
     "Web App Development",
     "SaaS Developer India",
     "OpenAI API Projects",
-    "PostLabs Portfolio",
+    "Mirofy Portfolio",
   ],
   authors: [{ name: "Mihir Nebani", url: "https://z1-tech-zeta.vercel.app/" }],
   icons: {
@@ -40,12 +39,12 @@ export const metadata: Metadata = {
     apple: "/postlab_logo.png",
   },
   openGraph: {
-    title: "PostLabs | Mihir Nebani - Portfolio & Projects",
+    title: "Mirofy | Mihir Nebani - Portfolio & Projects",
     description:
-      "Discover Mihir Nebani’s portfolio at PostLabs — expertise in frontend & full-stack development with Next.js, React, Node.js, TypeScript, and modern SaaS solutions.",
+      "Discover Mihir Nebani’s portfolio at Mirofy — expertise in frontend & full-stack development with Next.js, React, Node.js, TypeScript, and modern SaaS solutions.",
     images: ["/postlab_logo.png"],
     url: "https://z1-tech-zeta.vercel.app/",
-    siteName: "PostLabs",
+    siteName: "Mirofy",
     locale: "en_IN",
     type: "website",
   },
@@ -57,12 +56,20 @@ export default function RootLayout({
 }>) {
   const navItems = [
     {
-      name: "About",
+      name: "Dashboard",
+      link: "/dashboard",
+    },
+    {
+      name: "AI Image",
+      link: "/create-image",
+    },
+    {
+      name: "Chat",
       link: "/",
     },
     {
-      name: "Contact",
-      link: "/contact",
+      name: "Profile",
+      link: "/profile",
     },
   ];
   return (
@@ -70,16 +77,11 @@ export default function RootLayout({
       <body
         className={`${interTight.className} antialiased bg-[#f8f8f2] relative`}
       >
-        <div className="floating-grid">
-          <div className="floating-grid-col"></div>
-          <div className="floating-grid-col"></div>
-          <div className="floating-grid-col"></div>
-        </div>
+       
 
-        {/* <FloatingNav navItems={navItems} /> */}
-        {/* <ChatBot /> */}
+        <FloatingNav navItems={navItems} />
+        <ChatBot />
         {children}
-        {/* <PostLabsFooter /> */}
       </body>
     </html>
   );
