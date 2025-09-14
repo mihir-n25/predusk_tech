@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true, // <-- important for src/app/page.tsx
-  },
+    appDir: true, // TS might complain
+  } as any,       // ← cast to any
   images: {
     domains: ["i.pinimg.com"],
   },
