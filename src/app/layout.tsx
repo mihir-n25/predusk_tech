@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.Mirofy.in"),
   title: "Mirofy | Mihir Nebani - Frontend Developer & Full-Stack Engineer",
   description:
-    "Portfolio of Mihir Nebani at Mirofy. Skilled in Next.js, React, TypeScript, Node.js, and building scalable full-stack applications. Explore projects in SaaS, APIs, automation, and real-time apps.",
+    "Skilled in Next.js, React, TypeScript, Node.js, and building scalable full-stack applications. Explore projects in SaaS, APIs, automation, and real-time apps.",
   keywords: [
     "Mihir Nebani",
     "Mirofy",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "OpenAI API Projects",
     "Mirofy Portfolio",
   ],
-  authors: [{ name: "Mihir Nebani", url: "https://z1-tech-zeta.vercel.app/" }],
+  authors: [{ name: "Mihir Nebani", url: "https://predusk-tech-ten.vercel.app/" }],
   icons: {
     icon: "/postlab_logo.png", 
     shortcut: "/postlab_logo.png",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description:
       "Discover Mihir Nebani’s portfolio at Mirofy — expertise in frontend & full-stack development with Next.js, React, Node.js, TypeScript, and modern SaaS solutions.",
     images: ["/postlab_logo.png"],
-    url: "https://z1-tech-zeta.vercel.app/",
+    url: "https://predusk-tech-ten.vercel.app/",
     siteName: "Mirofy",
     locale: "en_IN",
     type: "website",
