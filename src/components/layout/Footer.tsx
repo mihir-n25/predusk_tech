@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="footer-items">
           <div className="item-left">
            <h1 className="text-white font-bold text-2xl">Mirofy</h1>
-            <p>A GameFi Infrastructure</p>
+            <p>An AI Infrastructure</p>
             <div className="social-links">
               <a
                 target="_blank"
